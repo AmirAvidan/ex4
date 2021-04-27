@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Forms 1 Amir Avidan</title>
+</head>
+
+    <body>
+        <h1>Join Our Members Club</h1>
+        <form id="sectionForm" action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="GET" autocomplete>
+
+            <lable>Full Name:</lable>
+            <input type="text" name="fullName" pattern="\w+\s\w+">
+            <br>
+            <br>
+            <lable>Email:</lable>
+            <input type="email" name="mail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}">
+            <br>
+            <br>
+            <lable>Password:</lable>
+            <input type="password" name="pass" pattern=".{2,}" title="Two or more characters"> 
+            <br>
+            <br>
+            <lable>Website:</lable>
+            <input type="url" name="website">
+            <br>
+            <br>
+            <lable>Phone:</lable>
+            <input type="tel" name="phone" pattern="[0-9]+" minlength="9" maxlength="10">
+            <br>
+            <br>
+            <lable>Coffee:</lable>
+            <input type="number" name="coffee" min="0" max="5">
+            <br>
+            <br>
+            <lable>Temperature:</lable>
+            <input type="range" name="temper" min="1" max="10">
+            <br>
+            <br>
+            <lable for="address">Address:</lable>
+            <textarea name="address" rows="6" cols="30"></textarea>
+            <br>
+            <br>
+            <h4>Interest</h4>
+            <lable>Reading Books<input type="checkbox" name="interests[]" value="Reading Books"></lable>
+            <lable>Programming<input type="checkbox" name="interests[]" value="coding"></lable>
+            <lable>Travel<input type="checkbox" name="interests[]" value="travel"></lable>
+            <lable>Sleep<input type="checkbox" name="interests[]" value="bed"></lable>
+            <br>
+            <br>
+            <lable>Female<input type="radio" name="gender" value="female" ></lable><br/>
+            <lable>Male<input type="radio" name="gender" value="male" ></lable><br/>
+            <lable>Other<input type="radio" name="gender" value="other" ></lable><br/>
+            <br>
+            <br>
+            <lable for="age">Age:
+                <select name="age" required>
+                    <option value="">none</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+            </lable>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        <script src = "js/script.js"></script>
+    </body>
+</html>
